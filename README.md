@@ -14,6 +14,14 @@
 
 <br> 
 
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- Git and GitHub
+- Figma
+
 ## README in Portuguese
 
 <h1 align="center"> Favoritos GitHub </h1>
