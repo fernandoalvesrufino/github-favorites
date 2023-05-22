@@ -38,3 +38,13 @@
 </p>
 
 <br>
+
+## Tecnologias
+
+- HTML
+- CSS
+- JavaScript
+- Git e GitHub
+- Figma
+
+<br>
