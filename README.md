@@ -22,6 +22,10 @@
 
 <br>
 
+## Project
+
+<br>
+
 ## README in Portuguese
 
 <h1 align="center"> Favoritos GitHub </h1>
@@ -48,3 +52,5 @@
 - Figma
 
 <br>
+
+## Projeto
