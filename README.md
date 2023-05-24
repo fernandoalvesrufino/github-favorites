@@ -24,6 +24,10 @@
 
 ## Project
 
+## How to Use
+
+## License
+
 <br>
 
 ## README in Portuguese
@@ -54,3 +58,7 @@
 <br>
 
 ## Projeto
+
+## Como Usar
+
+## Licença
