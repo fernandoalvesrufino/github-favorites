@@ -13,6 +13,10 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
+<br>
+  <img alt="application" src="./assets/aplicacao.jpg" width="100%">
+<br><br>
+
 ## Technologies
 
 - HTML
@@ -25,12 +29,33 @@
 
 ## Project
 
+This is a project that allows you to add favorite Github users and display some information about them, such as repositories and followers. The project interface is an HTML page that interacts with the Github API to retrieve user data.
+
 ## Files
 
+- `index.html`: HTML file that defines the page structure and contains the markup and layout.
+
+- `style.css`: CSS file that provides the visual style for the page.
+
+- `main.js`: JavaScript file responsible for initializing the application.
+
+- `Favorites.js`: JavaScript file that contains the Favorites and FavoritesView classes responsible for managing favorites and displaying the table of favorite users.
+
+- `GithubUser.js`: JavaScript file that contains the GithubUser class responsible for performing user searches on Github using its API.
 
 ## How to Use
 
+To access the finished project, [click here](https://fernandoalvesrufino.github.io/github-favorites/).
+
 ## License
+
+This project is licensed under the MIT License.
+
+<hr>
+
+by Fernando Rufino
+
+`Project created by Rocketseat`
 
 <br>
 
@@ -51,6 +76,8 @@
 </p>
 
 <br>
+  <img alt="Imagem da aplicação" src="./assets/aplicacao.jpg" width="100%">
+<br><br>
 
 ## Tecnologias
 
@@ -71,7 +98,7 @@ Este é um projeto que permite adicionar usuários favoritos do Github e exibir 
 
 - `style.css`: Arquivo CSS que fornece o estilo visual para a página.
 
-- `main.js`: Arquivo JavaScript que lida com a interatividade da página, incluindo a adição e remoção de usuários favoritos.
+- `main.js`: Arquivo JavaScript que é responsável por iniciar a aplicação.
 
 - `Favorites.js`: Arquivo JavaScript que contém as classes Favorites e FavoritesView responsáveis por gerenciar os favoritos e exibir a tabela de usuários favoritos.
 
@@ -79,6 +106,14 @@ Este é um projeto que permite adicionar usuários favoritos do Github e exibir 
 
 ## Como Usar
 
-- Para acessar ao projeto finalizado, [clique aqui]().
+- Para acessar ao projeto finalizado, [clique aqui](https://fernandoalvesrufino.github.io/github-favorites/).
 
 ## Licença
+
+Esse projeto está sob a licença MIT.
+
+<hr>
+
+by Fernando Rufino
+
+`Projeto criado pela Rocketseat`
