@@ -1,24 +1,37 @@
+export class GithubUser {
+  static search(username) {
+    const endpoint = `https://api.github.com/users/${username}`
+
+    return fetch(endpoint).then(data => data.json()).then(({ login, name, public_repos, followers }) => ({
+      login,
+      name,
+      public_repos,
+      followers
+    }))
+  }
+}
+
 export class Favorites {
   constructor(root) {
     this.root = document.querySelector(root)
     this.load()
+
+    GithubUser.search('maykbrito').then(user => console.log(user))
   }
 
   load() {
-    this.entries = [
-      {
-        login: 'fernandoalvesrufino',
-        name: 'Fernando Rufino',
-        public_repos: '58',
-        followers: '25'
-      },
-      {
-        login: 'maykbrito',
-        name: 'Mayk Brito',
-        public_repos: '76',
-        followers: '120000'
-      },
-    ]
+    this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
+  }
+
+  async add(username) {
+    const user = await GithubUser.search(username)
+  }
+
+  delete(user){
+    const filteredEntries = this.entries.filter(entry => entry.login !== user.login)
+
+    this.entries = filteredEntries
+    this.update()
   }
 }
 
@@ -29,6 +42,16 @@ export class FavoritesView extends Favorites {
     this.tbody = this.root.querySelector('table tbody')
 
     this.update()
+    this.onAdd()
+  }
+
+  onAdd() {
+    const addButton = this.root.querySelector('.search button')
+    addButton.onclick = () => {
+      const { value } = this.this.root.querySelector('.search input')
+
+      this.add(value)
+    }
   }
 
   update() {
@@ -44,6 +67,13 @@ export class FavoritesView extends Favorites {
       row.querySelector('.user a').href = `https://github.com/${user.login}`
       row.querySelector('.repositories').textContent = user.public_repos
       row.querySelector('.followers').textContent = user.followers
+
+      row.querySelector('.remove').onclick = () => {
+        const isOk = confirm('Tem certeza que deseja deletar essa linha?')
+      }
+      if(isOk) {
+        this.delete(user)
+      }
       
       this.tbody.append(row)
       
@@ -75,3 +105,4 @@ export class FavoritesView extends Favorites {
     })
   }
 }
+
