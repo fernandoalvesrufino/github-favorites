@@ -37,9 +37,10 @@ export class FavoritesView extends Favorites {
     this.entries.forEach( user => {
       const row = this.createRow()
 
-      row.querySelector('.user img').scr = `https://github.com/${user.login}.png`
+      row.querySelector('.user img').src = `https://github.com/${user.login}.png`
       row.querySelector('.user img').alt = `Imagem de ${user.name}` 
       row.querySelector('.user p').textContent = user.name
+      row.querySelector('.user span').textContent = user.login
       row.querySelector('.user a').href = `https://github.com/${user.login}`
       row.querySelector('.repositories').textContent = user.public_repos
       row.querySelector('.followers').textContent = user.followers
@@ -54,10 +55,10 @@ export class FavoritesView extends Favorites {
 
     tr.innerHTML = `
       <td class="user">
-        <img src="" alt="">
-        <a href="https://github.com/fernandoalvesrufino" target="_blank">
-          <p>Fernando Rufino</p>
-          <span>fernandoalvesrufino</span>
+        <img>
+        <a target="_blank">
+          <p></p>
+          <span></span>
         </a>
       </td>
       <td class="repositories">58</td>
