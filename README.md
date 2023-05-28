@@ -87,8 +87,6 @@ by Fernando Rufino
 - Git e GitHub
 - Figma
 
-<br>
-
 ## Projeto
 
 Este é um projeto que permite adicionar usuários favoritos do Github e exibir algumas informações sobre eles, como repositórios e seguidores. A interface do projeto é uma página HTML que interage com a API do Github para obter os dados dos usuários.
