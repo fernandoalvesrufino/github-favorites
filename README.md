@@ -25,8 +25,6 @@
 - Git and GitHub
 - Figma
 
-<br>
-
 ## Project
 
 This is a project that allows you to add favorite Github users and display some information about them, such as repositories and followers. The project interface is an HTML page that interacts with the Github API to retrieve user data.
